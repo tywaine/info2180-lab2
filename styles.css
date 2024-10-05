@@ -4,31 +4,29 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
-/* Style the profile picture */
 .profile-pic {
-    width: 150px; /* Adjust the size of the image */
-    height: 150px; /* Ensure the image is square */
-    border-radius: 50%; /* Create a circular effect */
-    object-fit: cover; /* Ensures the image covers the entire area without stretching */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
     margin: 0 auto;
     padding-top: 1%;
 }
 
 .float-left {
     float: left;
-    margin-right: 15px; /* Add some space between the image and the text */
-    margin-bottom: 15px; /* Add space below the image */
-    width: 300px; /* Adjust image width */
-    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: auto;
 }
 
-/* Float image to the right with wrapping text */
 .float-right {
     float: right;
-    margin-left: 15px; /* Add some space between the image and the text */
-    margin-bottom: 15px; /* Add space below the image */
-    width: 300px; /* Adjust image width */
-    height: auto; /* Maintain aspect ratio */
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: auto;
 }
 
 .container{
