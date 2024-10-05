@@ -1,0 +1,126 @@
+body{
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+/* Style the profile picture */
+.profile-pic {
+    width: 150px; /* Adjust the size of the image */
+    height: 150px; /* Ensure the image is square */
+    border-radius: 50%; /* Create a circular effect */
+    object-fit: cover; /* Ensures the image covers the entire area without stretching */
+    margin: 0 auto;
+    padding-top: 1%;
+}
+
+.float-left {
+    float: left;
+    margin-right: 15px; /* Add some space between the image and the text */
+    margin-bottom: 15px; /* Add space below the image */
+    width: 300px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Float image to the right with wrapping text */
+.float-right {
+    float: right;
+    margin-left: 15px; /* Add some space between the image and the text */
+    margin-bottom: 15px; /* Add space below the image */
+    width: 300px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+    grid-template-columns: 3fr 1fr; /* Main content takes 3 parts, sidebar takes 1 part */
+}
+
+header{
+    grid-area: header;
+    flex-direction: column;
+    background-color: #63B3ED;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.date {
+    font-size: 0.9em;
+    color: gray;
+}
+
+header h1{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+    grid-area: main;
+    padding: 50px;
+    flex-direction: column;
+}
+
+main article{
+    padding: 10px;
+}
+
+main article h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+
+aside{
+    grid-area: sidebar;
+    padding: 50px;
+}
+
+#Social_Media, #Archives{
+    padding: 20px;
+}
+
+#Social_Media h3, #Archives h3{
+    color: #48BB78;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Social_Media a, #Archives a{
+    color: #4299E1;
+}
+
+#About{
+    background-color: #E2E8F0;
+    align-items: center;
+    padding: 10px;
+}
+
+#About h3{
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+aside ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+}
+
+aside ul li a {
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #2C5282;
+    color: #FFFFFF;
+}
